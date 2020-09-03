@@ -27,5 +27,9 @@ export default createGlobalStyle`
       align-items: center;
       flex-direction: column;
     }
+    
+    button {
+      font-family: Montserrat, sans-serif;
+    }
   }
 `;
