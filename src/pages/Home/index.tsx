@@ -11,7 +11,7 @@ import { HomeStyled } from './Home.styled';
 
 const Home: React.FC<RouteComponentProps> = ({ history }) => {
 	const masterContext = useContext(MasterContext);
-	const { master, link, loadDataRace, resetMaster } = masterContext;
+	const { isLoading, link, loadDataRace, resetMaster } = masterContext;
 
 	useEffect(() => {
 		if (link !== '/') {
@@ -20,15 +20,21 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
 	}, [link]);
 
 	return (
-		<HomeStyled>
+		<HomeStyled id="home">
 			<Container>
-				<PageTitle>
+				<PageTitle className="animate__animated  animate__bounceIn">
 					Welcome to <strong>iClinic</strong>
 				</PageTitle>
-				<p className="uppercase">Frontend Challenge</p>
+				<p className="uppercase animate__animated animate__fadeIn">
+					Frontend Challenge
+				</p>
 
-				<Button className="uppercase primary" onClick={() => loadDataRace()}>
-					Entrar
+				<Button
+					className="uppercase primary start animate__animated animate__fadeIn"
+					onClick={() => loadDataRace()}
+					disabled={isLoading}
+				>
+					Start
 				</Button>
 			</Container>
 		</HomeStyled>

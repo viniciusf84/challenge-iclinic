@@ -15,4 +15,8 @@ export const HomeStyled = styled.section`
 			text-transform: uppercase;
 		}
 	}
+
+	button.start {
+		animation-delay: 0.6s;
+	}
 `;
