@@ -25,6 +25,7 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
 				<PageTitle className="animate__animated  animate__bounceIn">
 					Welcome to <strong>iClinic</strong>
 				</PageTitle>
+
 				<p className="uppercase animate__animated animate__fadeIn">
 					Frontend Challenge
 				</p>

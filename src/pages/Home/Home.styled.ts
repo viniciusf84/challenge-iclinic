@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { colors } from '../../styles/variables';
 
 export const HomeStyled = styled.section`
-	color: ${colors.primary};
+	background-color: ${(props) => props.theme.pageBackground};
+	color: ${(props) => props.theme.text};
 	text-align: center;
 
 	p {
