@@ -56,10 +56,11 @@ export const MasterImageWrapper = styled.figure`
 	border-radius: 50%;
 	background-size: cover;
 	overflow: hidden;
-	margin: 90px 0 18px;
+	margin: 0 0 18px;
 	order: 1;
 
 	@media (min-width: ${breakpoints.mobile}px) {
+		margin: 90px 0 18px;
 		width: 380px;
 		height: 380px;
 		order: 2;
