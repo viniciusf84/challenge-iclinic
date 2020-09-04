@@ -4,3 +4,7 @@ export const colors = {
 	dark: '#2A2A2A',
 	light: '#FBFE63',
 };
+
+export const breakpoints = {
+	mobile: 800,
+};
