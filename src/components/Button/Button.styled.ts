@@ -3,6 +3,8 @@ import { rgba } from 'polished';
 import { colors } from '../../styles/variables';
 
 export const ButtonStyled = styled.button`
+	color: ${(props) => props.theme.buttonText};
+	background-color: ${(props) => props.theme.buttonBackground};
 	border-radius: 10px;
 	min-height: 56px;
 	min-width: 189px;
@@ -12,6 +14,10 @@ export const ButtonStyled = styled.button`
 	padding: 0 42px;
 	cursor: pointer;
 	transition: background-color 0.3s ease-out;
+
+	&:hover {
+		background-color: ${(props) => props.theme.hoverButtonBackground};
+	}
 
 	&:disabled {
 		cursor: not-allowed;
@@ -24,13 +30,7 @@ export const ButtonStyled = styled.button`
 	}
 
 	&.primary {
-		background-color: ${colors.primary};
-		color: ${colors.clear};
 		padding: 0;
-
-		&:hover {
-			background-color: ${rgba(colors.primary, 0.7)};
-		}
 	}
 
 	&.clear {
