@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect, useCallback } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import { getCharacterInfo } from '../services';
@@ -39,20 +39,25 @@ const MasterProvider: React.FC = ({ children }) => {
 	const [link, setLink] = useState<string>('/');
 	const [theme, setTheme] = useState<ThemeProps>(home);
 
-	async function loadDataRace(): Promise<void> {
+	const loadDataRace = useCallback(async () => {
 		const getLightSideData = getCharacterInfo('1'); // Light Side
 		const getDarkSideData = getCharacterInfo('4'); // Dark Side
 
 		setIsLoading(true);
-		const race = await Promise.race([getLightSideData, getDarkSideData]);
 
-		setMasterName(race.data.name);
+		try {
+			const race = await Promise.race([getLightSideData, getDarkSideData]);
+			setMasterName(race.data.name);
+		} catch (error) {
+			console.log(error);
+		}
+
 		setIsLoading(false);
-	}
+	}, []);
 
-	function resetMaster() {
+	const resetMaster = useCallback(() => {
 		setMasterName(null);
-	}
+	}, []);
 
 	useEffect(() => {
 		if (!!masterName) {
