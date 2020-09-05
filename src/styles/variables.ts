@@ -7,4 +7,5 @@ export const colors = {
 
 export const breakpoints = {
 	mobile: 800,
+	phone: 420,
 };
