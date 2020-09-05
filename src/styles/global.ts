@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { breakpoints } from './variables';
 
 export default createGlobalStyle`
   * {
@@ -22,10 +23,22 @@ export default createGlobalStyle`
   #root {
     > section {    
       height: 100%;       
-      padding: 20px;
+      padding: 20px; 
+      
+      @media (min-width: ${breakpoints.mobile}px) {
+			  padding: 35px 42px;
+		  }
+    }
+
+    .flex__default {
       display: flex;
       align-items: center;
+      justify-content: center;
       flex-direction: column;
+
+      &.row {
+        flex-direction: row;
+      }
     }
     
     button {
