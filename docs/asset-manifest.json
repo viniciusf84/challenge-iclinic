@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/iclinic/static/js/main.8823a806.chunk.js",
-    "main.js.map": "/iclinic/static/js/main.8823a806.chunk.js.map",
-    "runtime-main.js": "/iclinic/static/js/runtime-main.897abc14.js",
-    "runtime-main.js.map": "/iclinic/static/js/runtime-main.897abc14.js.map",
-    "static/js/2.29dd1e7c.chunk.js": "/iclinic/static/js/2.29dd1e7c.chunk.js",
-    "static/js/2.29dd1e7c.chunk.js.map": "/iclinic/static/js/2.29dd1e7c.chunk.js.map",
-    "index.html": "/iclinic/index.html",
-    "precache-manifest.0c92bac8a105144070d33fdf5ff435bb.js": "/iclinic/precache-manifest.0c92bac8a105144070d33fdf5ff435bb.js",
-    "service-worker.js": "/iclinic/service-worker.js",
-    "static/js/2.29dd1e7c.chunk.js.LICENSE.txt": "/iclinic/static/js/2.29dd1e7c.chunk.js.LICENSE.txt",
-    "static/media/darth-vader.png": "/iclinic/static/media/darth-vader.3e06b3a8.png",
-    "static/media/luke-skywalker.png": "/iclinic/static/media/luke-skywalker.738fc480.png"
+    "main.js": "/whatever/static/js/main.44621602.chunk.js",
+    "main.js.map": "/whatever/static/js/main.44621602.chunk.js.map",
+    "runtime-main.js": "/whatever/static/js/runtime-main.96d83f5e.js",
+    "runtime-main.js.map": "/whatever/static/js/runtime-main.96d83f5e.js.map",
+    "static/js/2.5842d1bf.chunk.js": "/whatever/static/js/2.5842d1bf.chunk.js",
+    "static/js/2.5842d1bf.chunk.js.map": "/whatever/static/js/2.5842d1bf.chunk.js.map",
+    "index.html": "/whatever/index.html",
+    "precache-manifest.39692d34199a8aa131ec378e7082e04b.js": "/whatever/precache-manifest.39692d34199a8aa131ec378e7082e04b.js",
+    "service-worker.js": "/whatever/service-worker.js",
+    "static/js/2.5842d1bf.chunk.js.LICENSE.txt": "/whatever/static/js/2.5842d1bf.chunk.js.LICENSE.txt",
+    "static/media/darth-vader.png": "/whatever/static/media/darth-vader.3e06b3a8.png",
+    "static/media/luke-skywalker.png": "/whatever/static/media/luke-skywalker.738fc480.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.897abc14.js",
-    "static/js/2.29dd1e7c.chunk.js",
-    "static/js/main.8823a806.chunk.js"
+    "static/js/runtime-main.96d83f5e.js",
+    "static/js/2.5842d1bf.chunk.js",
+    "static/js/main.44621602.chunk.js"
   ]
 }
