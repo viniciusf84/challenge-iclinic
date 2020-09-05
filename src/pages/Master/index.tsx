@@ -19,33 +19,40 @@ const Master: React.FC<MasterProps> = ({ history, link }) => {
 	const { isLoading, master, loadDataRace, image, resetMaster } = masterContext;
 
 	useEffect(() => {
-		// back to home
+		// back home
 		if (!master) {
 			history.push('/');
 		}
-	}, [master]);
+	}, [master, history]);
 
 	return (
-		<MasterStyled id="master">
-			<GoBack className="back" text="back" onClick={() => resetMaster()} />
+		<MasterStyled id="master" className="flex__default">
+			<GoBack
+				className="back flex__default row"
+				text="back"
+				onClick={() => resetMaster()}
+			/>
 
-			<MasterInfo>
+			<MasterInfo className="flex__default">
 				<Button
 					className="action"
 					onClick={() => loadDataRace()}
 					disabled={isLoading}
 				>
-					{isLoading ? 'Loading...' : 'Choose your path again, Padawan'}
+					{isLoading ? 'Loading...' : 'choose your path again, Padawan'}
 				</Button>
 
-				{!isLoading && master && (
-					<MasterImageWrapper
-						className="animate__animated animate__fadeIn"
-						style={{ backgroundImage: `url(${image})` }}
-					></MasterImageWrapper>
-				)}
+				<MasterImageWrapper className="flex__default">
+					{!isLoading && !!master && (
+						<img
+							src={image}
+							alt={master}
+							className="animate__animated animate__fadeIn"
+						/>
+					)}
+				</MasterImageWrapper>
 
-				<div className="message">
+				<div className="message flex__default">
 					{!isLoading && (
 						<p className="animate__animated animate__fadeIn">
 							Your master is <strong>{master}</strong>
