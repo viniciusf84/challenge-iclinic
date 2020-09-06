@@ -40,13 +40,13 @@ const MasterProvider: React.FC = ({ children }) => {
 	const [theme, setTheme] = useState<ThemeProps>(home);
 
 	const loadDataRace = useCallback(async () => {
-		const getLightSideData = getCharacterInfo('1'); // Light Side
-		const getDarkSideData = getCharacterInfo('4'); // Dark Side
-
 		setIsLoading(true);
 
 		try {
-			const race = await Promise.race([getLightSideData, getDarkSideData]);
+			const race = await Promise.race([
+				getCharacterInfo('1'), // Light Side
+				getCharacterInfo('4'), // Dark Side
+			]);
 			setMasterName(race.data.name);
 		} catch (error) {
 			console.log(error);
