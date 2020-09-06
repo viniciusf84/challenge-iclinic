@@ -1,9 +1,7 @@
 import axios from 'axios';
 
-const DATA_URL = `https://swapi.dev/api/people/`;
+const api = axios.create({
+	baseURL: 'https://swapi.dev/api',
+});
 
-function Api(uri: string) {
-	return axios.get(`${DATA_URL}${uri}`);
-}
-
-export default Api;
+export default api;
