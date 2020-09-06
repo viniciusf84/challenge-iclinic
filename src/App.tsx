@@ -9,7 +9,7 @@ import Routes from './routes';
 
 const App: React.FC = () => (
 	<MasterProvider>
-		<BrowserRouter>
+		<BrowserRouter basename="/iclinic">
 			<Routes />
 		</BrowserRouter>
 		<GlobalStyle />
