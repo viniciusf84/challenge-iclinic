@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/iclinic/static/js/main.70c89294.chunk.js",
-    "main.js.map": "/iclinic/static/js/main.70c89294.chunk.js.map",
+    "main.js": "/iclinic/static/js/main.e725134e.chunk.js",
+    "main.js.map": "/iclinic/static/js/main.e725134e.chunk.js.map",
     "runtime-main.js": "/iclinic/static/js/runtime-main.897abc14.js",
     "runtime-main.js.map": "/iclinic/static/js/runtime-main.897abc14.js.map",
     "static/js/2.29dd1e7c.chunk.js": "/iclinic/static/js/2.29dd1e7c.chunk.js",
     "static/js/2.29dd1e7c.chunk.js.map": "/iclinic/static/js/2.29dd1e7c.chunk.js.map",
     "index.html": "/iclinic/index.html",
-    "precache-manifest.7b3c2fcf1c09732c3ee5812f6b4902df.js": "/iclinic/precache-manifest.7b3c2fcf1c09732c3ee5812f6b4902df.js",
+    "precache-manifest.74e1aa7b4fa85a556094a48a8d594b51.js": "/iclinic/precache-manifest.74e1aa7b4fa85a556094a48a8d594b51.js",
     "service-worker.js": "/iclinic/service-worker.js",
     "static/js/2.29dd1e7c.chunk.js.LICENSE.txt": "/iclinic/static/js/2.29dd1e7c.chunk.js.LICENSE.txt",
     "static/media/darth-vader.png": "/iclinic/static/media/darth-vader.3e06b3a8.png",
@@ -16,6 +16,6 @@
   "entrypoints": [
     "static/js/runtime-main.897abc14.js",
     "static/js/2.29dd1e7c.chunk.js",
-    "static/js/main.70c89294.chunk.js"
+    "static/js/main.e725134e.chunk.js"
   ]
 }
