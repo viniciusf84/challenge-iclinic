@@ -11,18 +11,18 @@ import { HomeStyled } from './Home.styled';
 
 const Home: React.FC<RouteComponentProps> = ({ history }) => {
 	const masterContext = useContext(MasterContext);
-	const { isLoading, link, loadDataRace, resetMaster } = masterContext;
+	const { isLoading, link, loadDataRace } = masterContext;
 
 	useEffect(() => {
 		if (link !== '/') {
 			history.push(link);
 		}
-	}, [link]);
+	}, [link, history]);
 
 	return (
-		<HomeStyled id="home">
-			<Container>
-				<PageTitle className="animate__animated  animate__bounceIn">
+		<HomeStyled id="home" className="animate__animated  animate__fadeIn">
+			<Container className="flex__default">
+				<PageTitle className="animate__animated  animate__fadeInDown">
 					Welcome to <strong>iClinic</strong>
 				</PageTitle>
 
